@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+  
+    
+    <environment include="Development">
+        <h2 class="h2-myra">@ViewBag.Ambiente</h2>
+    </environment>
+    <environment exclude="Development">
+        <h2>@ViewBag.Ambiente</h2>
+    </environment>
+    <environment include="Production">
+        <h2>@ViewBag.Ambiente</h2>
+    </environment>
+     <environment include="Production,Development">
+        <div class="display-myra">
+        </div>
+    </environment>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@section Scripts
+{
+    <script>
+        const tempo = 3000;
+        const h2 = document.querySelector(".h2-myra");
+        setTimeout(() => { h2.classList.toggle("crescer"); },tempo);
+        setTimeout(() => { h2.classList.toggle("crescer"); }, tempo * 2);
+    </script>
+}

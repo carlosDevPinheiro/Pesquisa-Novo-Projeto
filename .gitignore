@@ -1,0 +1,6 @@
+
+.vs/
+*/**/**/appsettings.json
+*/**/**/bin
+*/**/**/obj
+*/**/**/*.csproj.user

@@ -1,0 +1,22 @@
+Renamed Types:
+
+[OfuscadorConsole]Program -> [OfuscadorConsole] . 
+{
+	[OfuscadorConsole]Program::<Main>$[1]( [System.Runtime]System.String[] ) ->  
+
+	[OfuscadorConsole]Program::.ctor[0]( ) skipped:  special name
+}
+
+Skipped Types:
+
+[Ofuscador.BiblotecaTest]Ofuscador.BiblotecaTest.Class1 skipped:  KeepPublicApi option in configuration
+{
+
+	[Ofuscador.BiblotecaTest]Ofuscador.BiblotecaTest.Class1::.ctor[0]( ) skipped:  special name
+}
+
+Renamed Resources:
+
+
+Skipped Resources:
+

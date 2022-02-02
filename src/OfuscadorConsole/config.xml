@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Obfuscator>
+	<Var name="InPath" value=".\bin\Debug\net6.0" />
+	<Var name="OutPath" value=".\Ofuscados" />
+	<Var name="LogFile" value=".ofuscacion" />
+	<Var name="RenamePoroperties" value="true" />
+	<Var name="RenameEvents" value="true" />
+	<Var name="RenameFields" value="true" />
+	<Var name="KeepPulicApi" value="true" />
+	<Var name="HidePrivateApi" value="true" />
+	<Var name="UseUnicodeNames" value="true" />
+	<Var name="HideString" value="true" />
+	<Var name="OptimizeMethods" value="true" />
+	<Var name="SuppressIldasm" value="true" />
+
+	<!--<Include path="$(InPath)\TestInclude.xml" /> -->
+
+	<Module file="$(InPath)\Ofuscador.BiblotecaTest.dll" />
+	<Module file="$(InPath)\OfuscadorConsole.dll" />
+
+</Obfuscator>
